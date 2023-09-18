@@ -1,0 +1,54 @@
+body {
+  background-color: #F7F7F7;
+}
+
+header {
+  background-color: rgba(247, 247, 247, 0);
+  font: 11.75px Verdana, sans-serif;
+}
+
+ul {
+  padding-right: 17.5px;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  min-width: 95px;
+  background-color: rgba(247, 247, 247, 0);
+  float: right;
+  padding: 0px 1px;
+}
+
+li a {
+  background-color: transparent;
+  color: #333333;
+  display: block;
+  text-align: center;
+  padding: 20px 29px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  position: relative;
+  transition: font-size 0.3s ease-in-out;
+}
+li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0.75px;
+  background-color: rgba(51, 51, 51, 0.75);
+  transition: width 0.3s ease 0.1s, background-color 0.3s ease 0.1s;
+}
+li a:hover::before {
+  width: 95px;
+  background-color: #333333;
+}
+
+li:hover {
+  font-size: 12.75px;
+}/*# sourceMappingURL=style.css.map */
